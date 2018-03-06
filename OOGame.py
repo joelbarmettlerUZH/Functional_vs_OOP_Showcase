@@ -19,7 +19,7 @@ class Character:
 
     #Attacks are performed on another enemy which is as well of type Character.
     def attack(self, enemy):
-        enemy.reduceHealth(self.WeaponStrength)
+        enemy.reduceHealth(self)
 
     #Each character takes care of himself HOW HealthPoints are reduced, so armor or resistance could be taken into consideration
     def reduceHealth(self, enemy):
